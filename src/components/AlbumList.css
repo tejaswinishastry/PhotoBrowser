@@ -1,0 +1,45 @@
+ul.album-list{
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 12px;
+    padding-left: 0;
+}
+
+.no-albums{
+    color: grey;
+    font-family: 'Slabo 27px', serif;
+    font-size: 16px;
+    padding: 24px 0;
+    letter-spacing: 1px;
+}
+.no-albums i{
+    margin-right: 12px;
+}
+
+ul.album-list > li{
+    margin: 12px 24px 12px 0;
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-weight: bold;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+ul.album-list > li > i{
+    margin-right: 6px;
+}
+
+ul.album-list > li.active{
+    font-size: 28px;
+    color:#03A9F4;
+}
+
+ul.album-list > li.active > i{
+    color: #673AB7;
+}

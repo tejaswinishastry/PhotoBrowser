@@ -1,0 +1,33 @@
+li.grid-item{
+    margin: 0px 24px 24px 0;
+    position: relative;
+    background: rgb(238, 238, 238);
+    border-radius: 4px;
+    overflow: hidden;
+}
+li.grid-item .photo-check{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 24px;
+    color: white;
+    opacity: 0.1;
+    transition: all 0.3s;
+    z-index: 1;
+}
+li.grid-item:hover .photo-check{
+    opacity: 0.6;
+}
+li.selected.grid-item .photo-check{
+    transform: scale(1.4);
+    top: 40px;
+    left: 40px;
+    opacity: 0.8;
+}
+li.grid-item > a > img{
+    width: 280px;
+    transition: transform 0.3s;
+}
+li.selected.grid-item > a > img{
+    transform: scale(0.9);
+}

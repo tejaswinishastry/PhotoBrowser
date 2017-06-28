@@ -1,0 +1,7 @@
+.album{
+    max-width: 960px;
+    margin: auto;
+}
+.album > ul{
+    padding: 0;
+}
